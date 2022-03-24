@@ -4,7 +4,7 @@ const overlayContainer = document.querySelector('.overlay-container');
 const formContainer = document.querySelector('.form-container');
 SIGN_IN.addEventListener('click', function (){
     overlayContainer.style.bottom = "0";
-    formContainer.style.top = "-80%";
+    formContainer.style.top = "-75%";
     overlayContainer.style.zIndex = "1";
     formContainer.style.zIndex = "2";
 });
@@ -13,7 +13,7 @@ SIGN_IN.addEventListener('click', function (){
 //     overlayContainer.style.right = "-50%"
 // });
 SIGN_UP.addEventListener('click', function (){
-    overlayContainer.style.bottom = "-20%";
+    overlayContainer.style.bottom = "-25%";
     formContainer.style.top = "0";
     overlayContainer.style.zIndex = "2";
     formContainer.style.zIndex = "1";
