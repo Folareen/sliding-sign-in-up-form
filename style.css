@@ -69,7 +69,7 @@ h1{
 /* form */
 .form h1{
     font-weight:900;
-    margin: 0;
+    margin: 5px ;
 }
 .form a i{
     color: var(--normalcolor);
@@ -144,6 +144,9 @@ h1{
     margin: 0;
     /* display: none; */
     box-sizing: border-box;
+}
+.form-container .sign-up h1{
+    margin: 0;
 }
 
 /* overlay container */
