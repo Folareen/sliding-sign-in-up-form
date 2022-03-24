@@ -19,9 +19,9 @@ body {
 
 /* headings */
 h1{
-    font-size: 2em;
-    letter-spacing: 0.01em;
-    margin-bottom: 1.2em;
+    font-size: 2rem;
+    letter-spacing: 0.01rem;
+    margin: 1.2em;
 }
 
 /* container */
@@ -142,7 +142,6 @@ h1{
     background-color: white;
     height: 50%;
     margin: 0;
-    /* display: none; */
     box-sizing: border-box;
 }
 .form-container .sign-up h1{
@@ -161,13 +160,13 @@ h1{
     position: absolute;
     bottom: 0;
     z-index: 1;
-    font-size: 0.8em;
+    font-size: 0.8rem;
     transition: all .5s;
 }
 .overlay-container h1{
     text-transform: capitalize;
     margin: 4px 0;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: bolder;
 }
 .overlay-container p::first-letter{
