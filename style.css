@@ -1,6 +1,6 @@
 :root{
-    --normalcolor : whitesmoke ;
-    --gradient : linear-gradient(to bottom left, rgb(197, 95, 27),rgb(168, 9, 115) );
+    --normalcolor : rgb(212, 192, 218) ;
+    --gradient : linear-gradient(to bottom left, rgb(72, 27, 197),rgb(149, 9, 168) );
 }
 *{
     box-sizing: border-box;
@@ -31,13 +31,11 @@ h1{
     display: flex;
     flex-direction: column;
     width: 300px;
-    /* min-height: 480px; */
     height: 500px;
     box-sizing: border-box;
     position: relative;
     box-shadow: 0px 5px 20px rgb(128, 128, 128);
     border-radius: 10px;
-    /* border: 2px solid green; */
     overflow: hidden;
 }
 
@@ -45,24 +43,17 @@ h1{
 .form-container{
     padding: 0 !important;
     width: 100%;
-    /* background-color: red; */
-    /* border: 2px solid red; */
-    /* left: -150%; */
     text-align: center;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* z-index: 1; */
     height: 150%;
     border-radius: 10px;
     transition: all .5s;
     position: absolute;
+    left: 0;
+    right: 0;
     top: -75%;
     box-sizing: border-box;
-    /* display: none; */
-    /* background-color: red !important; */
-    /* overflow: hidden; */
     z-index: 2;
 }
 
@@ -139,6 +130,8 @@ h1{
     padding: 5px 20px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: white;
     height: 50%;
     margin: 0;
@@ -154,11 +147,12 @@ h1{
     width: 100%;
     height: 50%;
     text-align: center;
-    /* z-index: 3; */
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     position: absolute;
+    right: 0;
+    left: 0;
     bottom: 0;
     z-index: 1;
     font-size: 0.8rem;
@@ -199,33 +193,15 @@ h1{
 /* sign up overlay */
 .sign-up-overlay{
     width: 100%;
-    /* position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0; */
     height: 50%;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
     color: var(--normalcolor);
-    /* padding: 20px; */
-    /* border: 1px solid green; */
 }
 
 /* sign in overlay */
 .sign-in-overlay{
     width: 100%;
-    /* flex-direction: column;
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0; */
     height: 50%;
-    /* justify-content: center;
-    align-items: center; */
     color: var(--normalcolor);
-    /* padding: 20px; */
 }
 
 /* desktop view */
@@ -238,28 +214,38 @@ h1{
 
     /* form container */
     .form-container{
+        box-shadow: 0px 5px 20px rgb(128, 128, 128);
         flex-direction: row;
         height: 100%;
-        top: 0;
+        top: 0 !important;
+        bottom: 0 !important;
         justify-content: center;
         align-items: center;
-        display: none;
+        z-index: 2;
+        left: -50%;
+        transition: all .7s;
     }
 
     /* sign in and sign up */
     .form-container .sign-in, .form-container .sign-up{
         width: 50%;
         height: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     /* overlay container */
     .overlay-container{
-        flex-direction: row;
+        flex-direction: row-reverse;
         width: 100%;
         height: 100%;
         justify-content: center;
         align-items: center;
-        /* display: none; */
+        top: 0 !important;
+        bottom: 0 !important;
+        z-index: 1;
+        left: 50%;
+        transition: all .7s;
     }
 
     /* sign up overlay*/
